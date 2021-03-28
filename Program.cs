@@ -7,8 +7,7 @@ namespace Heron
         static void Main(string[] args)
         {
             Console.Clear();
-
-            string A, B, C;
+       
             double Lado1 , Lado2, Lado3, SemiPerimetro , Area;
 
             Console.ForegroundColor = ConsoleColor.Black;
@@ -26,7 +25,7 @@ namespace Heron
             Console.Write("Lado 1..: ");
 
             Console.ForegroundColor = ConsoleColor.White;
-            A = Console.ReadLine(); 
+            Lado1 = Convert.ToDouble (Console.ReadLine()); 
 
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.WriteLine("");
@@ -35,19 +34,15 @@ namespace Heron
             Console.Write("Lado 2..: ");
 
             Console.ForegroundColor = ConsoleColor.White;
-            B = Console.ReadLine();
+            Lado2 = Convert.ToDouble (Console.ReadLine());
             Console.WriteLine("");
 
             Console.ForegroundColor = ConsoleColor.DarkYellow;
             Console.Write("Lado 3..: ");
 
             Console.ForegroundColor = ConsoleColor.White;
-            C = Console.ReadLine();
+            Lado3 = Convert.ToDouble (Console.ReadLine());
             Console.WriteLine("");
-
-            Lado1 = Convert.ToDouble(A);
-            Lado2 = Convert.ToDouble(B);
-            Lado3 = Convert.ToDouble(C);
 
             SemiPerimetro = (Lado1 + Lado2 + Lado3) /2;
 
